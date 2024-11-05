@@ -1,0 +1,329 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: #ffff;
+    height: 100vh
+}
+
+nav{
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5%;
+
+   align-items: center;
+   background-image:linear-gradient(0deg,rgba(0, 0, 0, 0.07),rgb(255, 0, 0) 100%) ;
+   
+}
+
+.logo{
+   
+    position: relative;
+   
+
+}
+
+.logo img{
+    width: 50px;
+    border-radius:50px;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li{
+cursor: pointer;
+
+}
+
+nav ul li:hover{
+text-decoration: underline;
+}
+
+.cont{
+background-color: rgba(137, 43, 226, 0);
+width: 100%;
+position: absolute;
+
+
+}
+.cont img{
+    filter:grayscale(2);
+width: 100%;
+height: 100vh;
+z-index: -2;
+object-fit: cover;
+position: absolute;
+mask-image: linear-gradient(to right, transparent,black 50%);
+cursor: pointer;
+
+
+}
+
+.wel{
+position: relative;
+top: 160px;
+color: black;
+margin: auto;
+z-index: 2;
+
+
+
+
+}
+
+
+.wel .int{
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+color: #fff;
+   
+/* background: linear-gradient(90deg,rgb(255, 0, 0),black,#ffff);
+-webkit-background-clip: text;
+color: transparent; */
+
+}
+
+.wel .btn{
+margin-left:15%;
+margin-top:10px ;
+ cursor: pointer;
+}
+
+.wel .btn button{
+ cursor: pointer;
+padding: 10px 30px;
+font-weight: 600;
+border: none;
+outline: o;
+color: #ffff;
+background-color: #000;
+
+}
+#secbtn{
+background-color: #fff;
+color:black;
+}
+nav .toggelbtn button{
+    border: none;
+    padding: 3px;
+    background-color: transparent;
+    font-size: 35px;
+    z-index: 100;
+    cursor: pointer;
+
+}
+
+#text{
+    font-size: 21px;
+    padding: 20px 5%;
+    color: #fff;
+}
+
+
+.dropdown{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.964);
+   
+    position: relative;
+    top: 70px;
+    border-radius: 10px;
+    display: none;
+    
+    
+}
+
+
+.enable{
+    display: block;
+}
+
+.dropdown ul{
+    display: block;
+    
+   
+}
+
+.dropdown ul li{
+    
+    padding: 10px;
+    background-color: #000;
+}
+#lihome{
+    background-color: red;
+}
+
+
+@media screen and (max-width:770px) {
+    nav ul {
+        display: none;
+    }
+   body{
+    background-image: linear-gradient(45deg,rgb(0, 0, 0),rgb(0, 0, 0) );
+   }
+
+   .wel .int{
+    font-size: 19px;
+    font-weight: 600;
+   }
+   .wel #text{
+    font-size: 16px;
+    font-weight: 600;
+   
+        /* background: linear-gradient(to right, #000000, #ff0000, #ffffff 70%);
+    -webkit-background-clip: text;
+color: transparent; */
+   }
+
+   .toggelbtn button{
+   
+    cursor: pointer;
+   }
+
+  
+}
+
+
+@media screen and (min-width:770px) {
+   nav .toggelbtn{
+        display: none;
+    }
+
+    body{
+        background-image: linear-gradient(45deg,rgb(0, 0, 0),rgb(0, 0, 0) );
+       }
+
+       .dropdown{
+        display: none;
+       }
+    
+    
+}
+
+.eventcon{
+    width: 100%;
+    margin: auto;
+    overflow-x: scroll;
+    height: 280px;
+    background-color: rgba(0, 0, 0, 0);
+   position: relative;
+   top: 70vh;
+   display: flex;
+  
+   gap: 10px;
+   padding: 10px 20px;
+   
+}
+
+.eventcon::-webkit-scrollbar{
+   display: none;
+}
+
+.event img{
+    width: 400px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.event p{
+    position: relative;
+    bottom: 30px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.831);
+    height: 300px;
+    position: relative;
+    top: 80vh;
+    height: 400px;
+    text-align: center;
+}
+
+
+
+
+
+footer img{
+    width: 100px;
+    border-radius: 70px;
+    margin-top: 20px;
+}
+footer h5{
+    margin-top: 100px;
+}
+
+.footerul{
+margin-top: 10px;
+font-size: 35px;
+list-style-type: none;
+display: flex;
+gap: 20px;
+padding: 0px 20px;
+margin-bottom: 20px;
+}
+
+
+footer ul li:hover{
+ 
+    text-align: center;
+   
+    border-radius: 50%;
+    box-shadow: 2px 3px 40px rgb(255, 255, 255);
+  
+}
+
+
+.exterinfo{
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.395);
+    border-radius:10px ;
+    max-width: 350px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 30px;
+    left: 3%;
+    padding: 10px;
+    display: none;
+
+}
+
+@media screen and (max-width:344px){
+    .exterinfo{
+        max-width: 320px;
+    }
+}
+
+.exterinfov{
+    display: block;
+}
+
+ .exterinfo ul {
+    list-style-type: none;
+    cursor: pointer;
+ }
+.exterinfo ul li{
+   margin-top: 20px;
+   font-size: 26px;    
+   transition: 1s;
+}
+.exterinfo ul li{
+    color: blue;
+ }
